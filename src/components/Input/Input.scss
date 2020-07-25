@@ -1,0 +1,12 @@
+@import '../../assets/colors.scss';
+
+.input {
+  border: none;
+  border-bottom: 1px solid $main;
+  box-sizing: border-box;
+  display: block;
+  font-size: 1em;
+  line-height: 2;
+  outline: none;
+  width: 100%;
+}

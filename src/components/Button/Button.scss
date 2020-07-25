@@ -1,0 +1,39 @@
+@import '../../assets/colors.scss'; 
+
+.button {
+  border: 1px solid $main;
+  border-radius: 1.3em;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  outline: none;
+  padding: 0.65em 1.3em;
+
+  &--light {
+    background: $secondary;
+    border-color: $main;
+    color: $accent;
+
+    &:hover {
+      background: darken($secondary, $amount: 3);
+    }
+
+    &:active {
+      background: darken($secondary, $amount: 6);
+    }
+  }
+
+  &--dark {
+    background: $accent;
+    border-color: $accent;
+    color: $white;
+
+    &:hover {
+      background: lighten($accent, $amount: 6);
+    }
+
+    &:active {
+      background: lighten($accent, $amount: 12);
+    }
+  }
+}

@@ -1,24 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Switch, BrowserRouter as Router, Route } from 'react-router-dom';
+import DeckPage from './pages/DeckPage';
+import Decks from './pages/Decks';
+import Training from './pages/Training';
+import './App.scss';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Switch>
+          <Route path="/decks">
+            <Decks />
+          </Route>
+        </Switch>
+        <Switch>
+          <Route path="/deck/:id">
+            <DeckPage />
+          </Route>
+        </Switch>
+        <Switch>
+          <Route path="/training">
+            <Training />
+          </Route>
+        </Switch>
+        <Switch>
+          <Route path="/" exact>
+            <Decks />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

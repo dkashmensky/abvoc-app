@@ -1,0 +1,14 @@
+@import './assets/colors.scss';
+
+.App {
+  margin: 0 auto;
+  max-width: 60em;
+  padding: 1em;
+
+  section {
+    border: 1px solid $main;
+    border-radius: 1.3em;
+    padding: 1.3em;
+    margin-bottom: 1em;
+  }
+}
