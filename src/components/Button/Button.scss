@@ -36,4 +36,11 @@
       background: lighten($accent, $amount: 12);
     }
   }
+
+  &--large {
+    font-style: italic;
+    margin-bottom: 1em;
+    padding: 1em;
+    width: 100%;
+  }
 }

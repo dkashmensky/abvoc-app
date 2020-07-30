@@ -1,11 +1,11 @@
 import React from 'react';
 import MainInfo from '../components/MainInfo/MainInfo';
-import DecksSearch from '../components/DecksSearch/DecksSearch';
+import ElementsSearch from '../components/ElementsSearch/ElementsSearch';
 
 const Decks = () => (
   <>
     <MainInfo />
-    <DecksSearch />
+    <ElementsSearch type="deck" />
   </>
 );
 
